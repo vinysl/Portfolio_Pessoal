@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <header id="menu" class="menu_container flex">  <!-- Adicione aqui as CLASSES -->
+        <div class="menu_content">                  <!-- Adicione aqui as CLASSES -->
+            <a href="#">Landing Page</a>
+
+            <nav>
+                <ul class="menu_lista flex">    <!-- Adicione aqui as CLASSES -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contate Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="home_container">  <!-- Adicione aqui as CLASSES -->
+            <article id="home-texto" class="home_content">  <!-- Adicione aqui as CLASSES -->
+                <h4>Bem Vindo ao meu mundo!</h4>
+                <h1>Um lugar onde você pode se conectar comigo</h1>
+                <p>Sinta-se a vontade para explorar um pouco do meu mundo, aqui você encontrará informações sobre habilidades técnicas e não técnicas, projetos que desenvolvi e algumas curiosidades sobre mim.</p>
+
+                <a class="btn" target="_blank" href="https://github.com/vinysl">    <!-- Adicione aqui as CLASSES -->
+                    Explore
+                </a>
+            </article>
+
+            <article id="home-imagem" class="home_content"> <!-- Adicione aqui as CLASSES -->
+                <img class="home_content_img" src="./assets/homem-programando.svg" alt="Homem programando">   <!-- Adicione aqui as CLASSES -->
+            </article>
+        </section>
+
+        <section id="sobre" class="sobre_container">    <!-- Adicione aqui as CLASSES -->
+            <img src="https://avatars.githubusercontent.com/u/148589151?v=4"
+                alt="Foto do Perfil do Github - Vinicius Lima">
+
+            <article id="sobre-texto">  <!-- Adicione aqui as CLASSES -->
+                <h1>Quem sou eu?</h1>
+                <p>
+                    Muito prazer em ter você aqui eu me chamo Vinicius, tenho 24 anos e sou um desenvolvedor fullstack! No backend eu tenho conhecimento sobre a linguagem Java, sobre o framework SpringBoot, também possuo conhecimento sobre bancos de dados relacionais especificamente o MySQL e também possuo conhecimento em testes através de ferramentas como Insomnia e JUnit. Já no front tenho conhecimento sobre HTML, CSS, JavaScript e no framework React. Também possuo conhecimento sobre ferramentas de versionamento de código mais especificamente o Git. Além disso tudo também tenho conhecimento sobre metodologias ágeis especificamente Scrum. Já nas habilidades não técnicas se destacam a comunicação, o trabalho em equipe, a proatividade e a responsabilidade pessoal. Possuo conhecimento sobre a lingua inglesa a nivel intermediário. Fora do mundo da programação eu tenho como hobby a música onde faço parte de uma banda na qual sou contrabaixista. Abaixo você pode acessar meu Github e ver alguns dos projetos que já desenvolvi.
+                </p>
+
+                <div id="sobre-github" class="sobre_github flex">   <!-- Adicione aqui as CLASSES -->
+                    <a class="btn" href="https://github.com/vinysl" target="_blank">Github</a>
+                    <p>8 Seguidores</p>
+                    <p>20 Repositórios</p>
+                </div>
+
+            </article>
+        </section>
+
+        <section id="contato" class="contato_container">    <!-- Adicione aqui as CLASSES -->
+            <article id="contato-texto" class="contato_content">    <!-- Adicione aqui as CLASSES -->
+                <h4>Me Contate</h4>
+                <p>Se precisar entrar em contato comigo você pode acessar minhas redes socias ou prencher o formulário ao lado que assim que estiver disponível retornarei o seu contato.</p>
+
+                <div id="redes-sociais" class="social_container flex">  <!-- Adicione aqui as CLASSES -->
+                    <a href="">
+                        <img class="social_icon" src="./assets/linkedin.svg"
+                            alt="Logo do LinkedIn" />   <!-- Adicione aqui as CLASSES -->
+                    </a>
+                    <a href="">
+                        <img class="social_icon" src="./assets/github.svg"
+                            alt="Logo do Github" /> <!-- Adicione aqui as CLASSES -->
+                    </a>
+                    <a href="">
+                        <img class="social_icon" src="./assets/instagram.svg"
+                            alt="Logo do Instagram" />  <!-- Adicione aqui as CLASSES -->
+                    </a>
+                </div>
+            </article>
+
+            <form action="" method="POST">
+                <label for="nome">Nome: </label>
+                <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
+
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="subject">Assunto: </label>
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required>
+
+                <label for="message">Mensagem: </label>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+
+                <button class="btn" type="submit">Enviar</button> <!-- Adicione aqui as CLASSES -->
+            </form>
+        </section>
+    </main>
+
+    <footer class="flex"> <!-- Adicione aqui as CLASSES -->
+        Desenvolvido por Vinicius Lima 👾 - 2024
+    </footer>
+
+</body>
+
+</html>
